@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Favorite Book</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  
+ </head>
+
+<body>
+	<header class="header">
+		<h1>Guess My Favorite Book</h1>
+		<div id='library_img' style='background:url(https://www.bromleyhouse.org/wp-content/uploads/2018/10/bhl-books.jpg)'></div>
+	</header>
+
+  <main class="main">
+	<div class="setup">
+		<div class = "text">
+			<p>Have you read any good books lately? I've read so many my library is overflowing!</p>
+			<p>This gives me a great idea for a game. I will bring back some random books from my library and you have to guess which one was my favorite. You can even enter an optional subject for me to limit my search.</p>
+			<p>Ready?</p>
+		</div>
+		<form id="form" autocomplete="off">
+			<input id="theme" type="text" value="" placeholder="Enter Subject">
+			<a href="" class="text" id="start">Lets Play!</a>
+			<a href="" class="text" id="submit">SUBMIT</a>
+		</form>
+	</div>
+	
+	<div class = "game">
+		<section class="books">
+			<!-- Input by booktitles.js, put here to help visualize
+			<label class="book_selection">
+				<input id="book_input" type="radio" name="title" value=[num]>
+				<div class="book_info">
+					<img class="book_image">
+					<label class="book_title text">[title]</label>
+				</div>
+			</label>
+			-->
+		</section>
+	</div>
+	
+    <div class="result">
+      <div id="response_field"></div>
+	  <div id="joke"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+	<div id='library_img' style='background:url(https://www.bromleyhouse.org/wp-content/uploads/2018/10/bhl-books.jpg)'></div>
+  </footer>
+  
+  <script src="answers.js"></script>
+  <script src="dadjokes.js"></script>
+  <script src="booktitles.js"></script>
+  <script src="events.js"></script>
+
+</body>
+</html>

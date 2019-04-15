@@ -1,0 +1,171 @@
+body {
+  background-color: ivory;
+  margin: 0 auto;
+  min-height: 500px;
+}
+
+/* Header */
+.header {
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.header h1 {
+	position: absolute;
+	font-size: 50px;
+	top: 3px;
+	left: 25px;
+	height: 50px;
+	width: 75%;
+	font-family: 'Myriad Pro', 'Myriad', helvetica, arial, sans-serif;
+	color: #F5DEB3;
+	letter-spacing: 2px;
+	text-shadow: 2px 3px 3px #292929;
+	-webkit-text-stroke: 1px #d7c197;
+}
+
+
+#library_img{
+	height: 100px;
+	width: 100%;
+}
+
+/* Setup Display */
+.main {
+	height: 100%;
+	min-height: 329px;
+}
+.setup {
+	position: relative;
+	margin-left: 75px;
+}
+
+.text {
+	max-width: 925px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Myriad Pro', 'Myriad', helvetica, arial, sans-serif;
+    font-weight: 300;
+    color: black;
+	background-color: #F5DEB3;
+    text-align: center;
+}
+
+a:hover{
+	animation: bouncy 3s infinite linear;
+	position: relative;
+}
+
+@keyframes bouncy {
+	0%{top:0em}
+	30%{top:0em}
+	36%{top:-0.9em}
+	42%{top:0em}
+	46%{top:-0.4em}
+	50%{top:0em}
+	100%{top:0em;}
+}
+
+#submit {
+	display:none;
+}
+
+/* Books Display */
+.books {
+	box-sizing: border-box;
+	display: inline-flex; 
+	text-align: center;
+	width: 100%;
+	margin-left: 75px;
+}
+
+.book_selection {
+	box-sizing: border-box;
+	margin-right: 15px;
+	display: inline-block;
+	width: 200px;
+	height: 300px;
+	border: 2px solid ivory;
+}
+
+#book_input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+#book_input + div {
+	cursor: pointer;
+}
+
+#book_input:checked + div {
+  background: #F5DEB3;
+  border: 2px solid #d7c197;
+}
+
+#book_input:checked + div:after {
+  font-family: FontAwesome;
+  border: 2px solid #d7c197;
+  padding: 7px;
+  content: "\f00c";
+  font-size: 18px;
+  position: relative;
+  top: 11px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  background: ivory;
+  box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.25);
+}
+
+.book_title {
+	box-sizing: border-box;
+	text-align: center;
+	cursor: pointer;
+	display: block;
+}
+
+.book_image {
+	box-sizing: border-box;
+	width: 150px;
+	height: 210px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.book_title {
+	font-size: 12px;
+	height: 29px;
+	overflow: hidden;
+}
+
+/* Result Display */
+.result {
+	box-sizing: border-box;
+	width: 100%;
+	margin-left: 75px;
+}
+
+#dad_joke {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	border: 1px dotted black;
+	padding: 15px;
+	font-family: 'Indie Flower', cursive;
+}
+
+/* Footer Display */
+.footer {
+	margin-top: 50px;
+}
